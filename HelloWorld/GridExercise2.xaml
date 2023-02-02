@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+            Padding="20"
+            BackgroundColor="#127ac7"
+            xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            x:Class="HelloWorld.GridExercise2">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Label Text="Welcome to Xamarian" FontSize = "30" FontAttributes = "Bold" HorizontalOptions = "Center" TextColor="#fff" Grid.Row="0" Grid.Column="0" VerticalTextAlignment="End"></Label>
+        <Label Text="Cross-platform apps made easy" TextColor="#fff" Grid.Row="1" Grid.Column="0" FontSize = "18" HorizontalOptions="Center"></Label>
+        <Button Text="Login" TextColor="#fff" Grid.Row="2" Grid.Column="0" BackgroundColor="#1dabf0"></Button>
+        <Button 
+			Text="Register" 
+			TextColor="White"
+			BackgroundColor="#1dabf0" 
+            Grid.Row="3" Grid.Column="0"/>
+    </Grid>
+</ContentPage>

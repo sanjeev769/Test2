@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+        Padding="0,20,0,0"
+        xmlns="http://xamarin.com/schemas/2014/forms"
+        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+        x:Class="HelloWorld.GridPage">
+    <Grid BackgroundColor="Yellow" RowSpacing="40" ColumnSpacing="40">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"></RowDefinition>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"></ColumnDefinition>
+            <ColumnDefinition Width="2*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Label Text="Label 1" Grid.Row="0" Grid.Column="0" BackgroundColor="Silver"></Label>
+        <Label Text="Label 2" Grid.Row="0" Grid.Column="1" BackgroundColor="Silver"></Label>
+        <Label Text="Label 3" Grid.Row="1" Grid.Column="0" BackgroundColor="Silver"></Label>
+        <Label Text="Label 4" Grid.Row="1" Grid.Column="1" BackgroundColor="Silver"></Label>
+        <Label Text="Column Span" Grid.Row="2" Grid.ColumnSpan="3" BackgroundColor="Silver"></Label>
+        <Label Text="RowSpan" Grid.Column="2" Grid.RowSpan="3" BackgroundColor="Silver"></Label>
+    </Grid>
+</ContentPage>
